@@ -1,0 +1,180 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top,#557A46, #82A0D8);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    width: 90%;
+}
+
+h1 {
+    margin: 20px 0 0 0;
+    color: #F1EFEF;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.main {
+    width: 90%;
+    height: 80vh;
+    background: url(assets/images/totoro-pictures.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 380px;
+    border-radius: 15px;
+    padding: 25px 30px;
+    background: linear-gradient(to top, #557A46, #FFFFFF);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.container__img {
+    width: 100%;
+    height: 256px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.container__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container__song {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.container__song .name {
+    font-size: 21px;
+}
+
+.container__song .artist {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.container__progress-area {
+    width: 100%;
+    height: 7px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.container__progress-area .progress-area__bar {
+    position: relative;
+    height: inherit;
+    border-radius: inherit;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.progress-area__bar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    width: 12px;
+    height: 12px;
+    background: #000;
+    border-radius: inherit;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.container__progress-area:hover .progress-area__bar::before {
+    opacity: 1;
+}
+
+.progress-area__timer,
+.container__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-area__timer {
+    margin-top: 2px;
+}
+
+.progress-area__timer span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.container__controls {
+    width: 60%;
+    margin: 30px auto;
+    
+}
+
+.container__controls .control-icon {
+    width: 35px;
+    cursor: pointer;
+}
+
+.play-pause {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.play-pause:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info {
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    align-items: center;
+}
+
+.footer__info p {
+    margin: 0 30px 0 0;
+    color: #F1EFEF;
+}
+
+.footer__info a {
+    text-decoration: none;
+    color: #F1EFEF;
+}
+
+.rss img {
+    width: 100px;
+}
+

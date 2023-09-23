@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+</head>
+<body>
+    <header class="header">
+        <h1>Studio Ghibli</h1>
+    </header>
+    <main class="main">
+        <div class="container" id="container">
+            <div class="container__img" id="image">
+                <img src="" alt="">
+            </div>
+            <div class="container__song" id="container__song">
+                <p class="name" id="name"></p>
+                <p class="artist" id="artist"></p>
+            </div>
+            <div class="container__progress-area" id="container__progress-area">
+                <div class="progress-area__bar" id="progress-area__bar"></div>
+                <div class="progress-area__timer">
+                    <span class="current" id="current">00:00</span>
+                    <span class="duration" id="duration"></span>
+                </div>
+                <audio src="" id="music"></audio>
+            </div>
+            <div class="container__controls">
+                <img src="assets/icons/play-prev.svg" alt="Prev" class="control-icon" id="prev">
+                <img src="assets/icons/play.svg" alt="Play" class="play-pause" id="play-pause">
+                <img src="assets/icons/play-next.svg" alt="Next" class="control-icon" id="next">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+            <p>© 2023</p>
+            <a href="https://github.com/milee777" target="_blank">GitHub</a>
+        </div>
+        <a href="https://rs.school/js-stage0/" target="_blank" class="rss"><img src="assets/icons/rss.svg" alt="RSS"></a>
+    </footer>
+    <script src="script.js"></script>
+    <script src="playList.js"></script>
+</body>
+</html>
