@@ -28,14 +28,14 @@ function loadMusic(index) {
 //  При клике по кнопке "Play" запускается проигрывание аудиотрека 
 function playMusic() {
     container.classList.add('pause');
-    playPauseBtn.src = "../assets/icons/pause.svg"
+    playPauseBtn.src = "../audio-player/assets/icons/pause.svg"
     music.play();
 }
 
 //  При клике по кнопке "Pause" аудиотрек останавливается
 function pauseMusic() {
     container.classList.remove('pause');
-    playPauseBtn.src = "../assets/icons/play.svg"
+    playPauseBtn.src = "../audio-player/assets/icons/play.svg"
     music.pause();
 }
 
