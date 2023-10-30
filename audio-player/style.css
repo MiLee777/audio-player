@@ -143,6 +143,11 @@ h1 {
 .container__controls .control-icon {
     width: 35px;
     cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.container__controls .control-icon:hover {
+    transform: scale(1.1);
 }
 
 .play-pause {
@@ -176,9 +181,15 @@ h1 {
 .footer__info a {
     text-decoration: none;
     color: #F1EFEF;
+    transition: 0.5s ease;
 }
 
-.rss img {
-    width: 100px;
+.footer__info a:hover {
+    transform: scale(1.5);
+}
+
+.footer h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #F1EFEF;
 }
 
