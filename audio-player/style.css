@@ -193,3 +193,24 @@ h1 {
     color: #F1EFEF;
 }
 
+@media all and (max-width:600px) {
+    .main {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+@media all and (max-height:700px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        padding-bottom: 0;
+    }
+
+    .container__img {
+        height: 200px;
+    }
+}
