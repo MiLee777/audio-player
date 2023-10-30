@@ -88,6 +88,10 @@ progressArea.addEventListener('click', (e) => {
     playMusic();
 });
 
+// Автоматическое переключение на следующий аудиотрек по истечении продолжительности текущего аудиотрека 
+music.addEventListener('ended', () => {
+    nextMusic();
+});
 
 
 
